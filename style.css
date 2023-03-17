@@ -3,11 +3,16 @@
     padding: 0;
 }
 body{
-    min-height: 100vh;
-    background-color: #000000;
-    color: #ffffff;
+    scroll-behavior: smooth;
     font-family:sans-serif;
+    background-color: #000000;
 }
+
+.hero{
+    min-height: 100vh;
+    color: #ffffff;
+}
+
 .container{
     min-height: 100vh;
     display: flex;
@@ -15,18 +20,21 @@ body{
 }
 .about-me{
     display: inline-block;
+    overflow:hidden;
     align-items: center;
     padding: 20px;
     margin: 20px;
 }
 .profile-img img{
     padding: 20px;
-    border-radius: 4%;
+    width: 500px;
+    border-radius: 6%;
     opacity:90%;
 }
 
 @media(max-width:768px){
     body{
+
     }
     .container{
         display: block;
@@ -34,4 +42,9 @@ body{
         margin-left: auto;
         margin-right: auto;
     }
+    .hero{
+        width: fit-content;
+        overflow: hidden;
+    }
+
 }
