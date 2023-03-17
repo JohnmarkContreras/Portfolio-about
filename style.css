@@ -1,0 +1,37 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    min-height: 100vh;
+    background-color: #000000;
+    color: #ffffff;
+    font-family:sans-serif;
+}
+.container{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+}
+.about-me{
+    display: inline-block;
+    align-items: center;
+    padding: 20px;
+    margin: 20px;
+}
+.profile-img img{
+    padding: 20px;
+    border-radius: 4%;
+    opacity:90%;
+}
+
+@media(max-width:768px){
+    body{
+    }
+    .container{
+        display: block;
+        position: absolute;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
